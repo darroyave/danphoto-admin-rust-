@@ -1050,12 +1050,6 @@
       }
     }
   }
-  .absolute {
-    position: absolute;
-  }
-  .fixed {
-    position: fixed;
-  }
   .file-input {
     @layer daisyui.l1.l2.l3 {
       cursor: pointer;
@@ -1206,24 +1200,6 @@
       grid-column-start: 2;
       grid-row-start: 1;
       min-width: calc(0.25rem * 0);
-    }
-  }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
     }
   }
   .my-2 {
