@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DanPhoto Admin</title>
+    
+    <link rel="stylesheet" href="output.css" />
+  <link rel="modulepreload" href="/danphoto-admin-378d803649bc33f7.js" crossorigin="anonymous" integrity="sha384-kEa76LGrKUL9BdcIl/Nvs5X4be8UB+5RzwrKXdJzlBVzykwl138qaT/tvVOn1LUc"><link rel="preload" href="/danphoto-admin-378d803649bc33f7_bg.wasm" crossorigin="anonymous" integrity="sha384-Edm4ZCQaCGnNmZvFO3tfO3/DoJ0sIxZaI/uMpiJYicpSaqRSrvBWokHhEkDehn18" as="fetch" type="application/wasm"></head>
+  <body>
+    
+<script type="module">
+import init, * as bindings from '/danphoto-admin-378d803649bc33f7.js';
+const wasm = await init({ module_or_path: '/danphoto-admin-378d803649bc33f7_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+  </body>
+</html>
