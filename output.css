@@ -1065,6 +1065,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -1232,6 +1235,24 @@
       min-width: calc(0.25rem * 0);
     }
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .input-sm {
     @layer daisyui.l1.l2 {
       --size: calc(var(--size-field, 0.25rem) * 8);
@@ -1334,31 +1355,6 @@
       padding-inline: calc(var(--size) / 2 - var(--border));
     }
   }
-  .footer {
-    @layer daisyui.l1.l2.l3 {
-      display: grid;
-      width: 100%;
-      grid-auto-flow: row;
-      place-items: start;
-      column-gap: calc(0.25rem * 4);
-      row-gap: calc(0.25rem * 10);
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      & > * {
-        display: grid;
-        place-items: start;
-        gap: calc(0.25rem * 2);
-      }
-      &.footer-center {
-        grid-auto-flow: column dense;
-        place-items: center;
-        text-align: center;
-        & > * {
-          place-items: center;
-        }
-      }
-    }
-  }
   .card-body {
     @layer daisyui.l1.l2.l3 {
       display: flex;
@@ -1421,9 +1417,6 @@
   }
   .grid {
     display: grid;
-  }
-  .inline {
-    display: inline;
   }
   .table {
     display: table;
